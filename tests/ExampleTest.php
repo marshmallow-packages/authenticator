@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Marshmallow\Authenticator\Tests;
 
 class ExampleTest extends TestCase
 {

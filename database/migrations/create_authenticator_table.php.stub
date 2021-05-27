@@ -1,0 +1,21 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+return new class extends Migration
+{
+    public function up()
+    {
+        Schema::create('authenticator_tokens', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('slug')->unique();
+            $table->text('access_token')->nullable()->default(null);
+            $table->text('long_lived_token')->nullable()->default(null);
+            $table->datetime('expires_at')->nullable()->default(null);
+            $table->timestamps();
+        });
+    }
+};
