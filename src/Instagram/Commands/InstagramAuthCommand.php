@@ -75,6 +75,7 @@ class InstagramAuthCommand extends Command
 
         $this->newLine();
         $this->info('Token stored in the database.');
+
         return 0;
     }
 
