@@ -2,9 +2,9 @@
 
 namespace Marshmallow\Authenticator;
 
+use Marshmallow\Authenticator\Instagram\Commands\InstagramAuthCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Marshmallow\Authenticator\Instagram\Commands\InstagramAuthCommand;
 
 class AuthenticatorServiceProvider extends PackageServiceProvider
 {
