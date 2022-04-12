@@ -12,6 +12,6 @@ class Authenticator extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return new BaseAuthenticator;
+        return BaseAuthenticator::class;
     }
 }
